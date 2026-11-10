@@ -1,0 +1,31 @@
+:root{--bg:#17181b;--panel:#222429;--line:#33363d;--text:#f2f2f3;--muted:#b4b7bd;--red:#c8202b;--red-hi:#ff5a60}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--red-hi)}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;padding-bottom:14px}
+.brand{font-weight:800;letter-spacing:.06em;color:var(--text);text-decoration:none}
+nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:15px}nav a:hover{color:var(--text)}
+.hero{display:grid;grid-template-columns:1fr 220px;gap:32px;align-items:center;padding:56px 0 40px}
+.hero h1{font-size:46px;line-height:1.08;margin:0 0 12px;letter-spacing:-.01em}
+.hero h1 span{color:var(--red-hi)}
+.hero p.lead{font-size:20px;color:var(--muted);margin:0 0 22px}
+.hero img{width:220px;height:220px;border-radius:48px;box-shadow:0 18px 50px rgba(0,0,0,.5)}
+.badges{display:flex;gap:10px;flex-wrap:wrap}
+.pill{display:inline-block;border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:9px 16px;font-size:15px;color:var(--muted)}
+section{padding:36px 0;border-top:1px solid var(--line)}
+section h2{font-size:28px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:15.5px}
+.prices{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.price{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center}
+.price.best{border:2px solid var(--red)}
+.price .amt{font-size:28px;font-weight:800;margin:6px 0}.price small{color:var(--muted);display:block}
+blockquote{margin:0;font-size:22px;line-height:1.45;font-style:italic;color:var(--text)}
+blockquote footer{font-style:normal;color:var(--muted);font-size:15px;margin-top:8px}
+footer.site{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--muted);font-size:14.5px}
+footer.site a{color:var(--muted)}
+.doc{max-width:760px;padding:30px 0 50px}.doc h1{font-size:34px;margin:0 0 6px}.doc h2{font-size:21px;margin:28px 0 6px}.doc p,.doc li{color:#dcdde0}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:32px}.hero img{width:140px;height:140px;border-radius:32px;order:-1}.hero h1{font-size:34px}.grid{grid-template-columns:1fr}.prices{grid-template-columns:1fr 1fr}nav a{margin-left:10px}}
